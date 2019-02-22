@@ -3,8 +3,235 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Berkshire Swash">
+<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Cinzel">
+<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Fjalla One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+<link href="//fonts.googleapis.com/css?family=Fjalla One:300,300italic,regular,italic,700,700italic&subset=latin-ext,greek-ext,cyrillic-ext,greek,vietnamese,latin,cyrillic" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+<link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <meta name="robots" content="noindex,follow" />
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+<script>  $(document).foundation();</script>	
+	
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script>  $('.panel-collapse').on('show.bs.collapse', function () {
+    $(this).siblings('.panel-heading').addClass('active');
+  });
+
+  $('.panel-collapse').on('hide.bs.collapse', function () {
+    $(this).siblings('.panel-heading').removeClass('active');
+  });</script>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+    <style>
+	
+	/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 032 css*/
+.jssorb032 {position:absolute;}
+.jssorb032 .i {position:absolute;cursor:pointer;}
+.jssorb032 .i .b {fill:rgb(163, 6, 6);fill-opacity:0.7;stroke:#000;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.25;}
+.jssorb032 .i:hover .b {fill:#000;fill-opacity:.6;stroke:#fff;stroke-opacity:.35;}
+.jssorb032 .iav .b {fill:#000;fill-opacity:1;stroke:#fff;stroke-opacity:.35;}
+.jssorb032 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+.jssora051 {display:block;position:absolute;cursor:pointer;}
+.jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+.jssora051:hover {opacity:.8;}
+.jssora051.jssora051dn {opacity:.5;}
+.jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+
+.bonito {
+  font-family: 'Cinzel', serif;
+  font-size: 98px
+  text-shadow: 4px 4px 4px #aaa;
+ 
+}
+body {
+ margin: 0;
+  font-family: 'Fjalla One';font-size: 14px;
+  background-color: rgb(116, 18, 18);
+  text-align: center;
+  color: white;
+}
+
+  .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #ace60f;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 80;
+  right: 25px;
+  font-size: 25px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(8, 5, 2);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: rgb(223, 190, 43);
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+.wrapper{
+  width:100%;
+}
+
+}
+.panel-heading {
+  padding: 0;
+	border:0;
+}
+.panel-title>a, .panel-title>a:active{
+	display:block;
+	padding:15px;
+  color:rgba(29, 202, 159, 0.63)63)0, 3, 17);
+  font-size:16px;
+  font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:1px;
+  word-spacing:3px;
+	text-decoration:none;
+}
+.panel-heading  a:before {
+   font-family: 'Glyphicons Halflings';
+   content: "\e114";
+   float: right;
+   transition: all 0.5s;
+}
+.panel-body {
+
+ background:#4e8e9e;
+} 
+.panel-heading.active a:before {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	transform: rotate(180deg);
+} 
+.carousel-caption {
+  float: center;	
+	margin: 0;
+  font-family: 'Fjalla One';font-size: 14px;
+  text-align: center;
+  color: white;
+	position: absolute;
+  top: 30%;
+} 
+	
+	
+@media screen and (max-width: 100%) {
+  .topnav a:not(:first-child) {display: none;}
+   .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+ 
+}
+
+}
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+      animation-name: jssorl-009-spin;
+      animation-duration: 1.6s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+  }
+
+  @keyframes jssorl-009-spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+  }
+
+  /*jssor slider bullet skin 032 css*/
+  .jssorb032 {position:absolute;}
+  .jssorb032 .i {position:absolute;cursor:pointer;}
+  .jssorb032 .i .b {fill:#fff;fill-opacity:0.7;stroke:#000;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.25;}
+  .jssorb032 .i:hover .b {fill:#000;fill-opacity:.6;stroke:#fff;stroke-opacity:.35;}
+  .jssorb032 .iav .b {fill:#000;fill-opacity:1;stroke:#fff;stroke-opacity:.35;}
+  .jssorb032 .i.idn {opacity:.3;}
+
+  /*jssor slider arrow skin 051 css*/
+  .jssora051 {display:block;position:absolute;cursor:pointer;}
+  .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+  .jssora051:hover {opacity:.8;}
+  .jssora051.jssora051dn {opacity:.5;}
+  .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+</style>
+
+    <title>HOTEL GRAN IMPERIO</title>
 </head>
+    
 <body style="padding:0px; margin:0px; background-color:#fff;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'">
 
     <!-- #region Jssor Slider Begin -->
@@ -108,7 +335,11 @@
                     <img style="position:absolute;top:0px;left:0px;width:470px;height:220px;max-width:470px;" src="img/c-phone-horizontal.png" />
                     <div data-ts="preserve-3d" style="position:absolute;top:4px;left:45px;width:379px;height:213px;overflow:hidden;">
                         <img data-t="1" style="position:absolute;top:0px;left:0px;width:379px;height:213px;max-width:379px;" src="google.JPG" />
-                        <img data-t="2" style="position:absolute;top:0px;left:379px;width:379px;height:213px;max-width:379px;" src="img/image1.jpg" />
+                        <img data-t="2" style="position:absolute;top:0px;left:379px;width:379px;height:213px;max-width:379px;" src="google.JPG" />
+                        <img data-t="1" style="position:absolute;top:0px;left:0px;width:379px;height:213px;max-width:379px;" src="google.JPG" />
+                        <img data-t="2" style="position:absolute;top:0px;left:379px;width:379px;height:213px;max-width:379px;" src="google.JPG" />
+                        <img data-t="1" style="position:absolute;top:0px;left:0px;width:379px;height:213px;max-width:379px;" src="google.JPG" />
+                        <img data-t="2" style="position:absolute;top:0px;left:379px;width:379px;height:213px;max-width:379px;" src="google.JPG" />
                     </div>
                     <img style="position:absolute;top:4px;left:45px;width:379px;height:213px;max-width:379px;" src="img/image2.JGP" />
                     <img data-t="3" style="position:absolute;top:476px;left:454px;width:63px;height:77px;max-width:63px;" src="img/hand.png" />
@@ -148,6 +379,42 @@
     </div>
     <script type="text/javascript">jssor_1_slider_init();</script>
     <!-- #endregion Jssor Slider End -->
+   nav class="navbar navbar-inverse navbar-fixed-top" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="bonito" href="#">HOTEL NORMANDIA</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">HABITACIONES Y SERVICIOS</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">NUESTROS HOTELES<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://hotelnormandia.github.io/">Hotel Normandia</a></li>
+            <li><a href="http://reservas.hotelboteromedellin.com.co/">Hotel Botero </a></li>
+           
+      </ul>
+        </li>
+        <li><a href="#">QUÍENES SOMOS</a></li>
+	      <li><a href="#">MISIÓN</a></li>
+        <li><a href="#">VISIÓN</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Calle 53 #49-100, Medellín, Antioquia </a></li>
+        <li><a href="#"><span></span> WhatsApp +57 318 03637898</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>	
+ <!-- #end main nav bar -->	
+    
     <iframe src="https://www.google.com/maps/embed?pb=!4v1550808485084!6m8!1m7!1s_L8q6gktnAB9mf9YVsYeTg!2m2!1d6.248977334762664!2d-75.58749083137823!3f140.9!4f8.719999999999999!5f0.7820865974627469" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-</body>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1149080468995!2d-75.58972768572718!3d6.2485859954770495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429a78b68fa07%3A0x384cabc00b0fd1de!2sHOTEL+GRAN+IMPERIO!5e0!3m2!1ses-419!2sco!4v1550811169722" width="600" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </body>
 </html>
