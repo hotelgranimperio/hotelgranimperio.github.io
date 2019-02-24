@@ -143,12 +143,15 @@ function closeNav() {
 	position:absolute;
 	top:50px;
 	right:30px;
-	width:480px;
-	height:110px;
+	width:380px;
+	height:60px;
 	font-family:'Cinzel',sans-serif;
-	font-size:40px;
+	font-size:30px;
 	line-height:1.5;
-	padding:25px 5px 15px 5px;
+	padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 	box-sizing:border-box;
 	background-color:rgba(255,109,5,0.6);
 	background-clip:padding-box;
@@ -159,14 +162,17 @@ function closeNav() {
 	align:center;
 	color:#f8f2f2;
 	position:absolute;
-	top:200px;
+	top:110px;
 	right:30px;
-	width:480px;
-	height:80px;
+	width:380px;
+	height:50px;
 	font-family:'Cinzel',sans-serif;
-	font-size:25px;
+	font-size:20px;
 	line-height:1.5;
-	padding:80px 5px 15px 5px;
+	padding-top: 10px;
+  padding-right:10px;
+  padding-bottom: 10px;
+  padding-left: 70px;
 	box-sizing:border-box;
 	background-color:rgba(14, 13, 13, 0.6);
 	background-clip:padding-box;
@@ -425,11 +431,17 @@ function closeNav() {
         /*jssor slider arrow skin 051 css*/
 .jssora051 {display:block;position:absolute;cursor:pointer;}
 .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
-
-
 .jssora051.jssora051ds {pointer-events:none;}
-
-
+.jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+ @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
   
 
 
@@ -446,22 +458,6 @@ function closeNav() {
  
 }
 }
-
-
-/*jssor slider loading skin spin css*/
-.jssorl-009-spin img {
-            animation-name: jssorl-009-spin;
-            animation-duration: 1.6s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-        @keyframes jssorl-009-spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-        
-   
-
 
 	
 
